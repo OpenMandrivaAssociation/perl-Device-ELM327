@@ -31,6 +31,6 @@ make test
 %install
 %makeinstall_std
 
-%files -f
+%files
 %doc Changes README
 #%{perl_vendorarch}/Device
