@@ -1,7 +1,7 @@
 %define upstream_name Device-ELM327
 %define upstream_version 0.08
 
-Summary:        Methods for reading OBD data with an ELM327 module.
+Summary:		Methods for reading OBD data with an ELM327 module
 Name:			perl-%{upstream_name}
 Version:		%perl_convert_version %{upstream_version}
 Release:		1
