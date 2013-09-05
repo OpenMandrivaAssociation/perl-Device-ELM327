@@ -33,4 +33,5 @@ make test
 
 %files
 %doc Changes README
-#%{perl_vendorarch}/Device
+%{perl_vendorarch}/Device/ELM327.pm
+%{_mandir}/man3/Device::ELM327.3pm.*
