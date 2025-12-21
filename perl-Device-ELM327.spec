@@ -10,6 +10,7 @@ Group:          Development/Perl
 Url:            https://search.cpan.org/dist/%{upstream_name}
 Source:         http://www.cpan.org/modules/by-module/Device/%{upstream_name}-%{upstream_version}.tar.gz
 BuildArch:      noarch
+BuildRequires:	make
 BuildRequires:  perl-devel
 BuildRequires:  perl(Device::SerialPort)
 Requires:       perl(Device::SerialPort)
