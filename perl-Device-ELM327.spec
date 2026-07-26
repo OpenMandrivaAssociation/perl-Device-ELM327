@@ -1,14 +1,12 @@
 %define upstream_name Device-ELM327
-%define upstream_version 0.08
-
 Summary:		Methods for reading OBD data with an ELM327 module
 Name:			perl-%{upstream_name}
-Version:		%perl_convert_version %{upstream_version}
-Release:		3
+Version:		0.08
+Release:		4
 License:        GPL or Artistic
 Group:          Development/Perl
-Url:            https://search.cpan.org/dist/%{upstream_name}
-Source:         http://www.cpan.org/modules/by-module/Device/%{upstream_name}-%{upstream_version}.tar.gz
+Url:            https://metacpan.org/dist/%{upstream_name}
+Source:         http://www.cpan.org/modules/by-module/Device/%{upstream_name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRequires:	make
 BuildRequires:  perl-devel
@@ -19,7 +17,7 @@ Requires:       perl(Device::SerialPort)
 Methods for reading OBD data with an ELM327 module.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 find . -type f -print0 | xargs -0 chmod 644
 
 %build
